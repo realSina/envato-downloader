@@ -23,7 +23,7 @@ if(isset($_GET['url'])) {
         $ch = curl_init($request);
         curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie);
         curl_setopt($ch, CURLOPT_COOKIEFILE, $cookie);
-        $payload = json_encode(array("licenseType" => 'project', 'projectName' => 'api', 'searchCorrelationId' => '6a55bdeb-e5dd-4f8e-8bfb-17c3f40b2db7'));
+        $payload = json_encode(array("licenseType" => 'project', 'projectName' => 'XXXXXXXXXXXXXX', 'searchCorrelationId' => 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX'));
         curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json', 'User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', "X-Csrf-Token:$csrf", "X-Csrf-Token-2:$csrf2"));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
